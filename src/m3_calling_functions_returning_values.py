@@ -7,8 +7,8 @@ This module demonstrates and practices:
   -- UNIT TESTING.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Zijian Huang.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -33,7 +33,7 @@ def main():
 def test_sum_of_digits():
     """ Tests the  sum_of_digits   function. """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function, as follows:
+    # DONE: 2. Implement this TEST function, as follows:
     #
     #  Step 1:  This TEST function tests the  sum_of_digits  function.
     #    So read the doc-string of the  sum_of_digits  function
@@ -63,8 +63,26 @@ def test_sum_of_digits():
     print('Test 1 expected:', expected)
     print('       actual:  ', answer)
 
+    # Test 2:
+    expected = 40
+    answer = 20 + 20
+    print('Test 2 expected', expected)
+    print('       actual: ', answer)
+
+    # Test 3:
+    expected = 87
+    answer = 40 + 30 + 17
+    print('Test 3 expexted', expected)
+    print('       actual: ', answer)
+
+    # Test 4:
+    expected = 50.37
+    answer = 25 + 25 + 0.37
+    print('Test 4 expected', expected)
+    print('       actual: ', answer)
+
     # ------------------------------------------------------------------
-    # TODO: 2 (continued).
+    # DONE: 2 (continued).
     # Below this comment, add 3 more test cases of your own choosing.
     # ------------------------------------------------------------------
 
@@ -105,7 +123,7 @@ def sum_of_digits(number):
 def test_digits_in_cube():
     """ Tests the   digits_in_cube   function. """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement this function.
+    # DONE: 3. Implement this function.
     #   It TESTS the  digits_in_cube  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -129,6 +147,24 @@ def test_digits_in_cube():
     print('-----------------------------------------------------')
     print('Testing the   digits_in_cube   function:')
     print('-----------------------------------------------------')
+
+    # Test 1
+    expected = 9
+    answer = digits_in_cube(3)
+    print('Test 1 expected', expected)
+    print('       actual: ',answer)
+
+    # Test 2
+    expected = 8
+    answer = digits_in_cube(2)
+    print('Test 2 expected',expected)
+    print('       actual: ',answer)
+
+    # Test 3
+    expected = 10
+    answer= digits_in_cube(4)
+    print('Test 3 expected',expected)
+    print('       actual: ',answer)
 
 
 def digits_in_cube(n):
