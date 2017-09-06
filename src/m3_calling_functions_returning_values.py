@@ -170,6 +170,7 @@ def test_digits_in_cube():
 
 def digits_in_cube(n):
     return sum_of_digits(n ** 3)
+
     """
     What comes in:  A positive integer.
     What goes out:  The sum of the digits in the CUBE of the integer.
@@ -299,6 +300,7 @@ def fancy_sums_of_digits(n):
       -- Let X denote the   sum   of the digits in (n ** 1000).
       -- Let Y denote the   sum   of the digits in (n ** 999).
       This function RETURNs the sum of the digits in (X ** Y).
+
     Side effects:   None.
     Examples:
       -- If n is 2, then:
